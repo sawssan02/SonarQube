@@ -3,9 +3,6 @@ pipeline {
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
-tools {
-        jdk 'jdk'  // Utilise l'installation JDK que vous avez définie dans Jenkins
-    }
   stages {
     stage('Scan') {
       steps {
